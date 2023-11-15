@@ -1,13 +1,7 @@
 <?php
 date_default_timezone_set('Europe/Dublin');
 include("CarPolicy.php");
-
-$myCarpolicy = new CarPolicy("XM123456", 450);
-
-$myCarpolicy->setDateOfLastClaim("2015-10-10");
-echo "the policy " . $myCarpolicy;
-echo "has " . $myCarpolicy->getTotalYearsNoClaims();
-echo "years no claims.";
-
-
+$cp = new CarPolicy("1234",200);
+$cp->setDateOfLastClaim("2010-01-01");
+echo $cp->getTotalYearsNoClaims();
 ?>

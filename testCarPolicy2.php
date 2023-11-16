@@ -6,10 +6,10 @@ $myCarpolicy = new CarPolicy("XM123456", $initialPremium);
 
 $myCarpolicy->setDateOfLastClaim("2015-10-10");
 
-echo "years no claims: " . $myCarpolicy->getTotalYearsNoClaims();
+echo "years no claims: " . $myCarpolicy->getTotalYearsNoClaim();
 
 echo "Your initial premium is $initialPremium";
 
-echo "Your discounted premium is " . $myCarPolicy->getDiscountedPremium();
+echo "Your discounted premium is " . $myCarpolicy->getDiscountedPremium();
 
 ?>
